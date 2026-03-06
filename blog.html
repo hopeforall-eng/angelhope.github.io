@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hope for All - Blog</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<div class="logo">
+<img src="images/logo.png" alt="Hope for All Logo">
+</div>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="contact.html">Contact</a>
+<a href="blog.html">Blog</a>
+</nav>
+</header>
+
+<section class="hero">
+<div>
+<h1>Our Blog</h1>
+<p>Stories of growth, healing, and transformation.</p>
+</div>
+</section>
+<section class="search-section">
+
+<input type="text" id="searchInput" placeholder="Search articles...">
+
+</section>
+<section class="blog-container">
+
+<div class="post">
+
+<img src="images/growth.jpg" alt="Hope and Growth">
+
+<h2>The Power of Hope</h2>
+
+<p class="date">March 4, 2026</p>
+
+<p>
+Hope is the quiet strength that carries us forward
+when everything feels uncertain...
+</p>
+
+<a href="post1.html" class="read-btn">Read More</a>
+
+</div>
+
+
+<div class="post">
+
+<img src="images/growth.jpg" alt="Growth">
+
+<h2>Growing Through Challenges</h2>
+
+<p class="date">March 3, 2026</p>
+
+<p>
+Growth does not happen in comfort.
+It happens when we stretch beyond fear.
+</p>
+
+<a href="post2.html" class="read-btn">Read More</a>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Hope for All. All Rights Reserved.
+</footer>
+<script>
+
+const searchInput = document.getElementById("searchInput");
+
+searchInput.addEventListener("keyup", function(){
+
+let filter = searchInput.value.toLowerCase();
+let posts = document.querySelectorAll(".post");
+
+posts.forEach(function(post){
+
+let title = post.querySelector("h2").textContent.toLowerCase();
+
+if(title.includes(filter)){
+post.style.display = "block";
+}else{
+post.style.display = "none";
+}
+
+});
+
+});
+
+</script>
+</body>
+</html>
