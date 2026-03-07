@@ -1,0 +1,210 @@
+body{
+background-color:#070707;
+color:#f5f5f5;
+font-family:'Segoe UI',sans-serif;
+margin:0;
+line-height:1.6;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+padding:20px 10%;
+background:black;
+}
+
+nav a{
+color:#d4af37;
+margin-left:20px;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+color:white;
+}
+
+.hero{
+text-align:center;
+padding:160px 20px;
+
+background-image:
+linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)),
+url("images/spiritual-light.jpg");
+
+background-size:cover;
+background-position:center;
+}
+.button{
+background:#d4af37;
+padding:12px 25px;
+margin-top:20px;
+text-decoration:none;
+color:black;
+font-weight:bold;
+}
+
+.features{
+display:flex;
+justify-content:center;
+gap:30px;
+padding:60px;
+}
+
+.card{
+background:#1b1b1b;
+padding:30px;
+width:250px;
+border:1px solid #d4af37;
+}
+
+.blog{
+display:flex;
+gap:40px;
+padding:40px;
+justify-content:center;
+}
+
+.post{
+
+width:300px;
+background:#111;
+padding:20px;
+border:1px solid #d4af37;
+transition:0.4s;
+
+}
+
+.post:hover{
+
+transform:translateY(-8px);
+box-shadow:0 10px 20px rgba(212,175,55,0.3);
+
+}
+
+.post img{
+width:100%;
+}
+
+.page-title{
+text-align:center;
+padding:50px;
+}
+
+.content{
+padding:40px 20%;
+}
+h1, h2, h3{
+color:#d4af37;
+text-shadow:0 0 6px rgba(212,175,55,0.4);
+}
+.article-image{
+width:100%;
+max-width:700px;
+display:block;
+margin:30px auto;
+border-radius:6px;
+}
+@media (max-width:768px){
+
+header{
+flex-direction:column;
+text-align:center;
+}
+
+nav{
+margin-top:10px;
+}
+
+nav a{
+display:block;
+margin:10px 0;
+}
+
+.highlights{
+flex-direction:column;
+align-items:center;
+}
+
+.blog-container{
+flex-direction:column;
+align-items:center;
+}
+
+.content{
+padding:30px;
+}
+
+.hero h1{
+font-size:36px;
+}
+
+}
+form{
+max-width:600px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+input, textarea{
+
+padding:12px;
+border:none;
+border-radius:4px;
+
+}
+
+button{
+
+background:#d4af37;
+border:none;
+padding:12px;
+font-weight:bold;
+cursor:pointer;
+
+}
+.blog-hero{
+
+background-image:
+linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.9)),
+url("images/light.jpg");
+
+background-size:cover;
+background-position:center;
+
+padding:120px 20px;
+text-align:center;
+}
+nav a{
+
+color:#d4af37;
+margin-left:25px;
+text-decoration:none;
+font-weight:bold;
+transition:0.4s;
+
+}
+
+nav a:hover{
+
+color:white;
+text-shadow:0 0 8px gold;
+
+}
+.featured{
+
+text-align:center;
+padding:80px 20px;
+
+}
+
+.featured-container{
+
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+
+}
